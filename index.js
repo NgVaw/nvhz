@@ -4,8 +4,8 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const app = express();
 const PORT = process.env.PORT || 10000;
-const TARGET = "http://103.129.126.85:5004";
-const SOURCE = "http://103.129.126.85:5004";
+const TARGET = "http://103.129.126.85:8000";
+const SOURCE = "http://103.129.126.85:8000";
 
 app.get("/health", (req, res) => {
   res.json({ status: "ok" });
